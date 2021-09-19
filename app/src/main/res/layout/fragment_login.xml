@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/day8_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/black_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp">
+            <EditText
+                android:id="@+id/day8_login_userName_ed"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/charcol_blue"
+
+                android:hint="User MailId"></EditText>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@id/day8_login_userName_ed"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp">
+            <EditText
+                android:id="@+id/day8_login_userPass_ed"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/charcol_blue"
+                android:hint="User Password "></EditText>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@id/day8_login_userPass_ed"
+                android:layout_centerInParent="true"
+                android:src="@drawable/confirm_pass"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/day8_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="login"
+                />
+
+            <Button
+                android:id="@+id/day8_signUp_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+
+                android:text="SignUp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/persian_green"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:id="@+id/header_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:weightSum="3"
+     android:layout_marginTop="5dp"
+     android:background="@color/persian_green"
+     android:orientation="horizontal">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Trio"
+      android:paddingLeft="20dp"
+      android:fontFamily="@font/goodtime"
+      android:textSize="20dp"
+      android:textColor="@color/light_red"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Angle"
+      android:fontFamily="@font/goodtime"
+      android:textSize="20dp"
+      android:textColor="#74e05c"/>
+ </LinearLayout>
+
+ <com.impulsive.zoomimageview.ZoomImageView
+     android:id="@+id/fresher_task_img"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/fresher_task"
+     android:visibility="gone"/>
+
+ <TextView
+     android:id="@+id/mywidget"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:layout_marginBottom="5dp"
+     android:singleLine="true"
+     android:ellipsize="marquee"
+     android:fadingEdge="horizontal"
+     android:fontFamily="@font/goodtime"
+     android:textSize="10sp"
+     android:marqueeRepeatLimit="marquee_forever"
+     android:scrollHorizontally="true"
+     android:textColor="@color/charcol_blue"
+     android:text="TrioAngle Fresher Task in Single Application...Developed by Mobile Team " />
+</LinearLayout>
+ <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <androidx.cardview.widget.CardView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     app:cardCornerRadius="30dp"
+     android:elevation="5dp">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/persian_green"
+     android:orientation="vertical">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:weightSum="3"
+     android:background="@drawable/sandy_brown">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center">
+  <TextView
+      android:id="@+id/day1_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Day One Task"
+      android:fontFamily="@font/goodtime"
+      android:layout_marginTop="10dp"
+      android:textSize="15dp"
+      android:textStyle="bold"/>
+
+   <Button
+       android:id="@+id/day1_arrow_btn"
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:layout_marginStart="10dp"
+       android:layout_toEndOf="@id/day1_title"
+       android:layout_centerInParent="true"
+       android:background="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+
+  </RelativeLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/charcol_blue"/>
+  <LinearLayout
+      android:id="@+id/day1_view_ll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone">
+  <TextView
+      android:id="@+id/textViewExpandable"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/dayOne"
+      android:textColor="#70000000"
+      android:layout_marginTop="10dp"
+      android:gravity="center"/>
+
+   <ImageView
+       android:id="@+id/day_one_image"
+       android:layout_width="63dp"
+       android:layout_height="50dp"
+       android:layout_gravity="center"
+       android:src="@drawable/day1" />
+  </LinearLayout>
+
+     <Button
+         android:id="@+id/day_1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Day -1 "
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_gravity="center"></Button>
+ </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Two Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:text="@string/dayTwo"
+       android:textColor="#70000000"
+       android:gravity="center"/>
+   <Button
+       android:id="@+id/day_2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -2 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Three Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:text="@string/dayThree"
+       android:textColor="#70000000"
+       android:layout_gravity="center"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -3 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Four Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayFour"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -4 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Five &amp; Six Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayFive_Six"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_5_6"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -5,6 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Seven Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/daySeven"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_7"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -7 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Eight Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayEight"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_8"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -8 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Nine Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayNine"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_9"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -9 "
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Ten Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayTen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_10"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -10"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Eleven Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayEleven"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_11"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -11"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Twelve Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayTweleve"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+
+   <Button
+       android:id="@+id/day_12"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -12"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Thirteen &amp; ForteenTask"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayThirteen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/day13_URL"
+       android:autoLink="web"
+       android:gravity="center"
+       android:text="@string/dayThirteenURL" />
+
+   <Button
+       android:id="@+id/day_13"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -13"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Fifteen Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayFifteen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_15"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -15"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Sixteen Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/daySixteen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_16"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -16"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Seventeen Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/daySiventeen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_17"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -17"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Eighteen Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayEighteen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_18"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -18"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Nineteen Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayNineteen"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_19"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -19"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day Twenty Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayTwenty"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_20"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -20"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:orientation="vertical"
+      android:background="@drawable/sandy_brown">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day TwentyOne Task"
+       android:layout_gravity="center"
+       android:fontFamily="@font/goodtime"
+       android:layout_marginTop="10dp"
+       android:textSize="15dp"
+       android:textStyle="bold"/>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/charcol_blue"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/dayTwentOne"
+       android:textColor="#70000000"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"/>
+
+   <Button
+       android:id="@+id/day_21"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -21"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"></Button>
+  </LinearLayout>
+
+ </LinearLayout>
+ </androidx.cardview.widget.CardView>
+
+</ScrollView>
+</LinearLayout>
+
+

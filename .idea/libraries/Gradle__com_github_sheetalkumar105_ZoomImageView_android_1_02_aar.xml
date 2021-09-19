@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sheetalkumar105:ZoomImageView-android:1.02@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/93028f5deefdf1a1af9215ddccbcb104/jetified-ZoomImageView-android-1.02/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/93028f5deefdf1a1af9215ddccbcb104/jetified-ZoomImageView-android-1.02/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/93028f5deefdf1a1af9215ddccbcb104/jetified-ZoomImageView-android-1.02/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sheetalkumar105/ZoomImageView-android/1.02/6e26f45a4909e8072ab85dbeaff1ee2f9449600d/ZoomImageView-android-1.02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

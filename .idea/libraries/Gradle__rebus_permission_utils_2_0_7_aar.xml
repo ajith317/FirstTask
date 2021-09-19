@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: rebus:permission-utils:2.0.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/615e67647fe5c57baf16f16a3856f088/jetified-permission-utils-2.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/615e67647fe5c57baf16f16a3856f088/jetified-permission-utils-2.0.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/615e67647fe5c57baf16f16a3856f088/jetified-permission-utils-2.0.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/67b90ebfffca044686ab0c1e9beec787/jetified-permission-utils-2.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/67b90ebfffca044686ab0c1e9beec787/jetified-permission-utils-2.0.7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/67b90ebfffca044686ab0c1e9beec787/jetified-permission-utils-2.0.7/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rebus/permission-utils/2.0.7/74d297132746a665e86ac1258ba5a11324af4e47/permission-utils-2.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rebus/permission-utils/2.0.7/c9e0e171791db88dced849c61d28bd70cefcbc7f/permission-utils-2.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

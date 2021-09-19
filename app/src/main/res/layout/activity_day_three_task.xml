@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DayThreeTask">
+
+    <LinearLayout
+        android:id="@+id/service_eg_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/orange_yellow"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Service Example"
+        android:textStyle="bold"
+        android:textSize="15dp">
+    </TextView>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/service_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/start_service_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        ></Button>
+    <Button
+        android:id="@+id/stop_service_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:layout_marginLeft="10dp"
+        ></Button>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/end_less_service_eg_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:background="@color/orange_yellow"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Service not destroy when App kill "
+            android:textStyle="bold"
+            android:textSize="15dp">
+        </TextView>
+
+            <Button
+                android:id="@+id/end_less_stop_service_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service without destroy"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                ></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/service_eg_ll"
+        android:id="@+id/broadcast_reciver_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/orange_yellow"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="BroadCast Reciever Example"
+            android:textStyle="bold"
+            android:textSize="15dp">
+        </TextView>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/broadCast_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Broadcast Reciver"
+                ></Button>
+
+            <Button
+                android:id="@+id/local_broadCast_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/broadcast_reciver_ll"
+        android:id="@+id/content_provider_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/orange_yellow"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Content Provider Example"
+            android:textStyle="bold"
+            android:textSize="15dp">
+        </TextView>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+            <Button
+
+                android:id="@+id/content_provider_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content Provider"
+                android:layout_marginLeft="10dp"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

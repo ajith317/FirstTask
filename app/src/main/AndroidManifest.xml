@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.firsttask">
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstTask"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".PaymentPaypal"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".DayNineTeenTask"
+            android:label="@string/title_activity_day_nine_teen_task" />
+        <activity android:name=".DayTwentyTask" />
+        <activity android:name=".DayTwentyOneTask" />
+        <activity android:name=".EndlessServiceMain" />
+        <activity android:name=".DayEigteenTask" />
+        <activity android:name=".DaySeventeenTask" />
+        <activity android:name=".DaySixteenTask" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".PaymentProcess" />
+        <activity
+            android:name=".DayFifteenTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".StayActivity" />
+        <activity android:name=".DayTwelveNewUser" />
+        <activity android:name=".DayThirteenTask" />
+        <activity android:name=".DayTwelveTask" />
+        <activity
+            android:name=".ViewBindingEg"
+            android:label="@string/title_activity_view_binding"
+            android:theme="@style/Theme.FirstTask.NoActionBar" />
+        <activity android:name=".DataBindingEg" />
+        <activity android:name=".DayElevenTask" />
+        <activity android:name=".view.LoginRoomMVVM" />
+        <activity android:name=".DayFiveAndSix" />
+        <activity android:name=".DayTenTask" />
+        <activity android:name=".DayNineTask" />
+        <activity android:name=".DayEightTask" />
+        <activity android:name=".ContentProviderEg" />
+        <activity android:name=".ViewEg" />
+
+        <receiver android:name=".WidgetEg">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity android:name=".DayFourTask" />
+        <activity android:name=".DayThreeTask" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DayTwoTask" />
+        <activity android:name=".DayOneTask" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NewContactActivity" />
+        <activity android:name=".ChangeContactActivity" />
+
+        <service
+            android:name=".ServiceEg"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+        <service
+            android:name=".EndlessService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".StartReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".TaskScheduleProvider"
+            android:authorities="com.example.firsttask"
+            android:enabled="true"
+            android:exported="true" /> <!-- <provider -->
+        <!-- android:name=".LoginContentProvider" -->
+        <!-- android:authorities="com.example.firsttask" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FirebaseService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider495608067455933"
+            android:exported="true" />
+    </application>
+
+</manifest>

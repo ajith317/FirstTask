@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DaySeventeenTask"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/day17_loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FaceBook login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+<!--    <Button-->
+<!--        android:id="@+id/day17_flogOut"-->
+<!--        android:layout_below="@id/day17_loginBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="logout"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--       />-->
+
+    <TextView
+        android:id="@+id/day17_id_fName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day17_loginBtn"
+        android:layout_centerHorizontal="true"
+       android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center" />
+
+    <com.jackandphantom.circularimageview.RoundedImage
+        android:id="@+id/day17_fImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+
+        app:rounded_radius="40"
+        android:layout_below="@id/day17_id_fName"
+        android:layout_centerHorizontal="true"
+      />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/day17_gSign_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google Login"
+        android:layout_below="@id/day17_fImage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/day17_gSignOut_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day17_gSign_btn"
+        android:text="SignOut"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:id="@+id/day17_id_gName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:layout_below="@id/day17_gSignOut_btn"/>
+
+
+
+</RelativeLayout>

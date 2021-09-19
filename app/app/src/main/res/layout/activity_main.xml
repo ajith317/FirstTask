@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <Button
+       android:id="@+id/day_1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Day -1 "></Button>
+    <Button
+        android:id="@+id/day_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day_2"
+        android:layout_below="@id/day_1"/>
+    <Button
+        android:id="@+id/day_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day_3"
+        android:layout_below="@id/day_2">
+    </Button>
+    <Button
+        android:id="@+id/day_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_3"
+        android:text="Day _4 "></Button>
+    <Button
+        android:id="@+id/day_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day_5"
+        android:layout_below="@id/day_4"/>
+    <Button
+        android:id="@+id/day_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day_6"
+        android:layout_below="@id/day_5">
+    </Button>
+
+</RelativeLayout>

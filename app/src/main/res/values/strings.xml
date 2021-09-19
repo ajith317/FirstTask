@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">FresherTask</string>
+    <string name="appwidget_text">WIDGET </string>
+    <string name="add_widget">Add widget</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_day_nine_task">DayNineTask</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="show_all"><u>Show All</u>.</string>
+
+
+    <string name="facebook_app_id">487084089224491</string>
+    <string name="fb_login_protocol_scheme">fb487084089224491</string>
+
+
+    <!--    <string name="facebook_app_id">599219404319511</string>-->
+    <!--    <string name="fb_login_protocol_scheme">fb599219404319511</string>-->
+
+
+    <string name="dayOne">
+        <br>
+            Pattern Printing with loop condition
+        </br>
+        <br>
+           OOPS Concept , Android Architecture, Hello World Project, Code Quality Basic
+        </br>
+    </string>
+
+    <string name="dayTwo">
+        <br>
+           Android Activity and Fragment lifecycle flow with sample project</br><br>Splash Screen with simple animation</br>
+    </string>
+
+
+    <string name="dayThree">
+        <br>Application Components</br><br>Activites \n</br><br>Service \n </br>
+        <br>Content Provider \n</br><br>BroadCast Reciver</br>
+    </string>
+    <string name="dayFour">
+        <br>Intent, View \n</br>
+        <br>Widgets \n</br><br>Notification \n</br><br>APK and AAB, Interface \n</br>
+    </string>
+
+    <string name="dayFive_Six">
+        <br>Kotlin \n</br>
+        <br>Different Coding architecture and Compontnents \n</br>
+        <br>MVVM Pattern and its advantage</br>
+    </string>
+    <string name="daySeven">
+        <br>Change App name and Logo</br>
+        <br>Use string.xml, style.xml, dimen.xml, theme.xml(Full Konwoldege in Resource file) \n</br>
+        <br>Design different mulitple layout and with ScrollView and Widget \n</br>
+        <br>Constraint Layout</br>
+    </string>
+
+    <string name="dayEight">
+        <br>Login and Register Page design \n</br>
+        <br>Login Functionality with validation and move login user details to home page with home Navigation Graph(Fragment) \n</br>
+
+    </string>
+
+    <string name="dayNine">
+        <br>Show mulitple image in view pager while swipe \n</br>
+        <br>View and DataBinding</br>
+    </string>
+
+    <string name="dayTen">
+        <br>SharedPrefrenece \n</br>
+        <br>Navigation View</br>
+    </string>
+
+    <string name="dayEleven">
+        <br>RecyclerView and CardView and different layout managers \n</br>
+        <br>Add item and delete multiple item and in recycler view with card layouts</br>
+    </string>
+
+    <string name="dayTweleve">
+        <br>To show given data from webService url using retrofit API \n</br>
+        <br>Different rest api methods</br>
+    </string>
+
+    <string name="dayThirteen">
+        <br>Design should like makent homepage \n</br>
+         <br>Load more implementation \n</br>
+    </string>
+    <string name="dayThirteenURL">
+        <br>http://makent.trioangledemo.com/api/home</br>
+    </string>
+    <string name="dayFifteen">
+        <br> PayPal Intergration\n</br>
+         <br>Stripe Intergration</br>
+    </string>
+    <string name="daySixteen">
+        <br> Image Upload(Post Method) \n</br>
+    </string>
+    <string name="daySiventeen">
+        <br> Facebook login Integration \n</br>
+        <br> Google plus login  Integration \n</br>
+    </string>
+    <string name="dayEighteen">
+        <br>Apple Login Intergration</br>
+    </string>
+
+    <string name="dayNineteen">
+        <br>Create map and show marker in center of map \n</br>
+
+    </string>
+
+    <string name="dayTwenty">
+<!--        <br>Auto Complete Place Search</br>-->
+        <br> SQL Lite(Room DB LIB) Contact book design</br>
+    </string>
+
+    <string name="dayTwentOne">
+        <br>Firebase Notification</br>
+          <br>Firebase Real time DB</br>
+    </string>
+    <string name="title_activity_view_binding">ViewBinding</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_day_nine_teen_task">Map</string>
+
+
+</resources>

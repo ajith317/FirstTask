@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/day_four_task_rl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayFourTask">
+
+<TextView
+    android:id="@+id/text_dayfour"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Day 4 Task"
+    android:layout_centerInParent="true"
+    android:layout_above="@id/day4Task_ll"
+    android:fontFamily="@font/goodtime"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_marginBottom="20dp"
+    ></TextView>
+
+    <LinearLayout
+        android:id="@+id/day4Task_ll"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/black_border"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/intent_btn"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Intent "></Button>
+
+        <Button
+            android:id="@+id/widget_btn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Widgets">
+        </Button>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp">
+            <Button
+                android:id="@+id/view_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Views">
+            </Button>
+            <Button
+                android:id="@+id/notification_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Notification">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@id/day4Task_ll"
+        android:id="@+id/d4_imgView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#E7E8ED">
+            <ImageView
+                android:id="@+id/userProf"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/contact_user"/>
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/userProf"
+                />
+            <ImageView
+                android:id="@+id/contac_save"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/heart"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+            app:cardCornerRadius="25dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/const_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="20dp"
+                        android:text="+91"
+                        android:textSize="20dp"
+                        android:layout_marginEnd="2dp"/>
+                    <EditText
+                        android:id="@+id/edit_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="932323"
+                        android:textSize="20dp"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@id/const_num"
+                        />
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edit_number"
+                        android:text="Mobile "
+                        android:textSize="10sp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="#BABABA"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edit_number"
+                        android:text="India"
+                        android:textSize="10sp"
+                        android:layout_toEndOf="@id/mobile"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#BABABA"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/phone"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@id/contac_msg_img"
+                        />
+                    <ImageView
+                        android:id="@+id/contac_msg_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/message"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+                    <TextView
+                        android:id="@+id/textViewGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video"
+                        android:layout_marginStart="20dp"
+                        android:textSize="20dp"
+                        />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/video"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WhatsApp"
+                        android:layout_marginStart="20dp"
+                        android:textSize="20dp"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/whatsapp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+                <Button
+                    android:id="@+id/button_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="save"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>
+</LinearLayout>

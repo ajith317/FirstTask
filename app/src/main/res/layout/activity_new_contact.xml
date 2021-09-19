@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/contact_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/save_trio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save to TrioAngle"
+            android:layout_centerInParent="true"
+            android:textSize="15dp"
+            android:fontFamily="@font/goodtime"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/save_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/contact_user"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:background="@null"
+        android:layout_margin="15dp"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:id="@+id/add_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="(xx) "
+        android:inputType="number"
+        android:background="@null"
+        android:padding="6dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

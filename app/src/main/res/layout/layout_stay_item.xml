@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--        <com.smarteist.autoimageslider.SliderView-->
+<!--            android:id="@+id/imageSlider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="300dp"-->
+<!--            app:sliderAnimationDuration="600"-->
+<!--            app:sliderAutoCycleDirection="back_and_forth"-->
+<!--            app:sliderAutoCycleEnabled="true"-->
+<!--            app:sliderIndicatorAnimationDuration="600"-->
+<!--            app:sliderIndicatorGravity="center_horizontal|bottom"-->
+<!--            app:sliderIndicatorMargin="15dp"-->
+<!--            app:sliderIndicatorOrientation="horizontal"-->
+<!--            app:sliderIndicatorPadding="3dp"-->
+<!--            app:sliderIndicatorRadius="2dp"-->
+<!--            app:sliderIndicatorSelectedColor="#5A5A5A"-->
+<!--            app:sliderIndicatorUnselectedColor="#FFF"-->
+<!--            app:sliderScrollTimeInSec="1"-->
+<!--            app:sliderStartAutoCycle="true" />-->
+    <com.jackandphantom.circularimageview.RoundedImage
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:rounded_radius="50"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/veriftyImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/verified"
+        android:layout_below="@id/imageSlider"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/slogo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follows best safety standards"
+        android:layout_toEndOf="@id/veriftyImg"
+        android:layout_below="@id/imageSlider"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/starImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/veriftyImg"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/star"
+            />
+        <TextView
+            android:id="@+id/ratings"
+            android:text="2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/starImg"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:weightSum="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sharedRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Shared rpp, > Shoit koren"
+            android:textColor="#0CB580"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Turan  - Gunak"
+            android:textColor="#202020"/>
+        <TextView
+            android:id="@+id/roomPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="4693/ night"
+            android:textColor="#EF1111"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

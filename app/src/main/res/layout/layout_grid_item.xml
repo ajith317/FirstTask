@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.jackandphantom.circularimageview.RoundedImage
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:rounded_radius="70"
+            android:layout_gravity="center"
+            android:id="@+id/imgHost"
+            />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtTitle"
+        android:maxLines="1"
+       />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtSubTitle"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtPrice"
+        android:maxLines="1"
+        android:textColor="#FA0000"/>
+    </LinearLayout>
+</LinearLayout>

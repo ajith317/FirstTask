@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="userLoginModel"
+            type="com.example.firsttask.model.LoginTableModel" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context=".DataBindingEg">
+
+    <TextView
+        android:id="@+id/userName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{userLoginModel.username}"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        />
+
+
+
+    <TextView
+
+        android:id="@+id/userPass_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{userLoginModel.password}"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        />
+</LinearLayout>
+</layout>

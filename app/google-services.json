@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "835735490230",
+    "project_id": "trioangle-1624087551896",
+    "storage_bucket": "trioangle-1624087551896.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835735490230:android:d1113480cde0fc7a002017",
+        "android_client_info": {
+          "package_name": "com.example.firsttask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835735490230-bprqr3kp3e1n3mcrfrcmba2udpjhiitl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firsttask",
+            "certificate_hash": "e4dcb7d5a19592c893e64f2d3a8002d0bbf2bebe"
+          }
+        },
+        {
+          "client_id": "835735490230-5pjosfecdf9210k1n6skpcsjn5h2so3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEaKEk9fXCI6WFik3HmFtFnKMa_-Sz0Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835735490230-5pjosfecdf9210k1n6skpcsjn5h2so3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
